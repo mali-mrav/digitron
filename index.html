@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width-device-width, initial-scale=1.0">
+        <title>Moj digitron</title>
+
+        <style>
+           /* div{
+                width: 120;
+                height: 80;
+                border: solid 4px;
+                border-color: brown;
+            } */
+
+            p {
+                color: green;
+                text-align: center;
+                font-size: 27px;
+                border: solid 1px;
+                border-color: gray;
+                margin: 20px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <script>
+
+            var prviBroj = prompt("Unesi prvi broj");
+            var operacija = prompt("Unesi operaciju");
+            var drugiBroj = prompt("Unesi drugi broj");
+
+            switch(operacija){
+            case "+" :
+            document.write('<p>Zbir unesena dva broja je: ' + ((parseInt(prviBroj) + parseInt(drugiBroj)))); "</p>"  
+            break; 
+            case "-" :
+            document.write("<p>Razlika unesena dva broja je: " + ((parseInt(prviBroj) - parseInt(drugiBroj)))); "</p>"
+            break;
+            case "*" :
+            document.write("<p>Proizvod dva unesena broja je: " + ((parseInt(prviBroj) * parseInt(drugiBroj)))); "</p>"  
+            break;
+            case "/" :
+            document.write("<p>Kolicnik dva unesena broja je: " + ((parseInt(prviBroj) / parseInt(drugiBroj)))); "</p>"
+            break;
+            default : alert("Operacija mora biti +-*/");
+            }
+
+           
+            /*for(operacija = "/";)
+            var V = parseInt(prviBroj) / parseInt(drugiBroj);*/
+
+          /*  if (operacija = "/") {
+              V = parseInt(prviBroj) / parseInt(drugiBroj);
+            } else if (operacija = "*") {
+              V = parseInt(prviBroj) * parseInt(drugiBroj);
+            } else if (operacija = "+") {
+              V = parseInt(prviBroj) + parseInt(drugiBroj);
+            } else if (operacija = "-") {
+              V = parseInt(prviBroj) - parseInt(drugiBroj);
+            } else {
+                V = "Moras unijeti operaciju.";
+            } */
+
+           // var V = parseInt(prviBroj) * parseInt(drugiBroj);
+
+                      
+            /*alert("Rezultat je " + V + ".");*/
+
+           /* document.getElementById("demo").innerHTML = "Rezultat je " + V + ".";
+
+            document.write("Rezultat je: " + V + ".");*/
+
+        </script>
+    </body>
+
+
+
+</html>
